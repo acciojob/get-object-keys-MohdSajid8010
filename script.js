@@ -2,12 +2,8 @@
 let student ={
 	name:"student1"
 }
-// student.protptype.getKeys=function (){
-// 	return Object.keys(student);
-// }
-let prototype={
-    getKeys:function(){
-        return Object.keys(student)}}
 
-Object.setPrototypeOf(student,prototype)
+Object.prototype.getKeys=function(){
+	return Object.keys(this);
+}
 console.log(student.getKeys())
